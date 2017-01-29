@@ -78,13 +78,16 @@
                 <div class="col-md-8 text-center"><span><select></select> Hour</span> <span><select></select> Minutes</span> <span><select></select> Seconds</span></div>
             </div>
             <div class="row">
-                <div class="leftcolumn col-md-4 text-right">Notification:</div> <input class="col-md-8 text-center" type="text" id="musicloc" size="55" />
+                <div class="leftcolumn col-md-4 text-right">Notification:</div>
+                <div class="col-md-8 text-center notification"><input style="width: 300px" type="text" id="musicloc" size="16" /></div>
                 <value="Eat these pills?" /> </div>
-
-            <div class="col-md-12 text-center"><input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" /></div>
+            <div class="row">
+                <div class="leftcolumn col-md-4"> </div>
+                <div class="col-md-8 text-center"><input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" /></div>
+            </div>
         </div>
     </form>
-    <p align="right">
+    <p class="col-md-12 text-right">
         <input type="submit" value="Send an email" onclick="window.open('mailto:doctort@pillsberry.org');" id="submitbutton" />
     </p>
 
