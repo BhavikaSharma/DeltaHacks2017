@@ -2,7 +2,6 @@
     font-family: Tahoma;
     font-weight: bold;
     font-size: 12px;
-    text-align: center;
 }
 
 #jsalarmclock div {
@@ -10,10 +9,8 @@
 }
 
 #jsalarmclock div.leftcolumn {
-    float: left;
     width: 150px;
     font-size: 13px;
-    clear: left;
 }
 
 #jsalarmclock span {

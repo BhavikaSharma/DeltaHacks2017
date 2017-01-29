@@ -2,6 +2,7 @@
 
 <head>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript">
         var jsalarm = {
@@ -69,21 +70,24 @@
 
 <body>
     <form action="" method="">
-        <div id="jsalarmclock">
-            <div>
-                <div class="leftcolumn">Current Time:</div> <span id="jsalarm_ct" style="letter-spacing: 2px"></span></div>
-            <div>
-                <div class="leftcolumn">Set time:</div> <span><select></select> Hour</span> <span><select></select> Minutes</span> <span><select></select> Seconds</span></div>
-            <div>
-                <div class="leftcolumn">Notification:</div> <input type="text" id="musicloc" size="55" />
+        <div class="container" id="jsalarmclock">
+            <div class="row">
+                <div class="leftcolumn col-md-4 text-right">Current Time:</div> <span class="col-md-8 text-center" id="jsalarm_ct" style="letter-spacing: 2px"></span></div>
+            <div class="row">
+                <div class="leftcolumn col-md-4 text-right">Set time:</div>
+                <div class="col-md-8 text-center"><span><select></select> Hour</span> <span><select></select> Minutes</span> <span><select></select> Seconds</span></div>
+            </div>
+            <div class="row">
+                <div class="leftcolumn col-md-4 text-right">Notification:</div> <input class="col-md-8 text-center" type="text" id="musicloc" size="55" />
                 <value="Eat these pills?" /> </div>
-            <input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" />
+
+            <div class="col-md-12 text-center"><input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" /></div>
         </div>
     </form>
-<p align="right">
-  <input type="submit" value="Send An Email" onclick="window.open('mailto:test@example.com');" id="submitbutton" /> 
-</p>
-    
+    <p align="right">
+        <input type="submit" value="Send an email" onclick="window.open('mailto:doctort@pillsberry.org');" id="submitbutton" />
+    </p>
+
 
 
     <script type="text/javascript">
@@ -94,5 +98,3 @@
 
 
 </html>
-
-
