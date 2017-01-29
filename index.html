@@ -49,7 +49,6 @@
                         this.hourselect[i] = new Option(this.padfield(i), this.padfield(i), false, dateobj.getHours() == i)
                     this.minuteselect[i] = new Option(this.padfield(i), this.padfield(i), false, dateobj.getMinutes() == i)
                     this.secondselect[i] = new Option(this.padfield(i), this.padfield(i), false, dateobj.getSeconds() == i)
-
                 }
                 jsalarm.showcurrenttime()
                 jsalarm.timer = setInterval(function() {
@@ -81,6 +80,10 @@
             <input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" />
         </div>
     </form>
+<p align="right">
+  <input type="submit" value="Send An Email" onclick="window.open('mailto:test@example.com');" id="submitbutton" /> 
+</p>
+    
 
 
     <script type="text/javascript">
@@ -88,4 +91,8 @@
     </script>
 </body>
 
+
+
 </html>
+
+
